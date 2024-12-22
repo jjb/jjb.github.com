@@ -12,7 +12,11 @@ body {
   font-size: 75%;
   color: #222;
   background: #fff;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  body { font-family: InterVariable, sans-serif; }
 }
 
 
