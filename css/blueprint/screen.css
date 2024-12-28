@@ -26,7 +26,14 @@ a img {border:none;}
 
 /* typography.css */
 html {font-size:100.01%;}
-body {font-size:75%;color:#222;background:#fff;font-family: Inter, sans-serif;}
+body {
+ font-size:75%;
+ color:#222;
+ background:#fff;
+ font-family: Inter, sans-serif;
+ font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+ font-feature-settings: 'ss01' 1, 'cv05' 1; /* Alternate digits, Lower-case L with tail https://rsms.me/inter/#features */
+}
 @supports (font-variation-settings: normal) {
   body { font-family: InterVariable, sans-serif; }
 }
